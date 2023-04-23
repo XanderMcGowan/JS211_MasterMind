@@ -31,8 +31,8 @@ const getRandomInt = (min, max) => {
 }
 
 const generateHint = (guess, solution) =>  {
-  solutionArray = solution.split("")
-  guessArray = guess.split("")
+  solutionArray = [solution[0],solution[1],solution[2],solution[3]]
+  guessArray = [guess[0],guess[1],guess[2],guess[3]]
   correctLetterLocations = 0
   correctLetters = 0
   
