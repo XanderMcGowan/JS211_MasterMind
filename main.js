@@ -31,10 +31,10 @@ const getRandomInt = (min, max) => {
 }
 
 const generateHint = (guess, solution) =>  {
-  solutionArray = [solution[0],solution[1],solution[2],solution[3]]
-  guessArray = [guess[0],guess[1],guess[2],guess[3]]
-  correctLetterLocations = 0
-  correctLetters = 0
+  let solutionArray = [solution[0],solution[1],solution[2],solution[3]]
+  let guessArray = [guess[0],guess[1],guess[2],guess[3]]
+  let correctLetterLocations = 0
+  let correctLetters = 0
   
 
 
@@ -46,7 +46,7 @@ const generateHint = (guess, solution) =>  {
   }
 
   for (let j = 0; j < solutionArray.length; j++){
-    targetIndex = solutionArray.indexOf(guessArray[j])
+    let targetIndex = solutionArray.indexOf(guessArray[j])
     if (targetIndex > -1){
       correctLetters ++
       solutionArray[targetIndex] = null
